@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Item view - Get Deal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/icon.png">
+  </head>
+
+  <body onload="initializing()">
+      <nav>
+        <section id='head'>
+        <a href='home.html'> <img src="./images/logo.png" width=40px height=40px style="margin:5px 0 0 5px" alt="Image not found"> </a>
+          <h1 style='margin:12px;'><a href='home.html'>GET DEAL</a></h1>
+          <i class="fa badge" id='cart' style="font-size:40px" value=0><a href='cart.html'>&#xf07a;</a></i>
+        </section>
+
+        <hr style="margin:0px">
+
+        <section id='menu'>
+            <h3 class='menu'><a href='./list/notebook.html'>Notebooks</a></h3>
+            <h3 class='menu'><a href='./list/pen.html'>Pens</a></h3>
+            <h3 class='menu'><a href='./list/marker.html'>Markers</a></h3>
+            <h3 class='menu'><a href='./list/dairy.html'>Dairies</a></h3>
+            <h3 class='menu'><a href='./list/calculator.html'>Calculator</a></h3>
+        </section>
+
+      </nav>
+
+      <section id='item_view_grid' style='margin:100px 2% auto 2%'>
+        <section>
+          <img src="" id='image' alt="Image Not Found">
+        </section>
+        <section>
+          <u><h1>Item Description :</h1></u>
+          <h1 style='font-size: 30px;text-align:center;'>
+            <h1 id='name'></h1><br>
+            <h1 id='price'></h1><br>
+            <h1 style="display:inline-block">No of Items : </h1> <input type="number" id='items' min='1' style="color:black;border:2px solid black;background:white;height:20px;text-align:center;width:60px" name="range" autofocus='on' onchange='change_value(this.value)' value=1><br><br>
+            <input type="button" name="" value="ADD TO CART" onclick="add_to_cart()">
+            <input type="button" name="" value="BUY NOW" onclick="buy_now()">
+          </h1>
+        </section>
+      </section><br><br>
+
+      <footer>
+        <section id='footer' style="position:fixed;bottom:0px;width:100%">
+            <h3 style='margin:3px'><a href='home.html'>GET DEAL</a></h3>
+            <h3 style='margin:3px'>INDIA</h3>
+            <h3 style='margin:3px'>By Sai Kiran Nalamothu</h2>
+        </section>
+      </footer>
+
+
+  </body>
+
+  <script type="text/javascript">
+    function initializing()
+    {
+      if(!('cart' in localStorage))
+      {
+        localStorage['cart']=0;
+      }
+      if(!('cart_items' in localStorage))
+      {
+        localStorage['cart_items']=JSON.stringify({});
+      }
+      if(!('buy_items' in localStorage))
+      {
+        localStorage['buy_items']=JSON.stringify({});
+      }
+
+      document.getElementById('cart').getAttributeNode('value').value=localStorage['cart'];
+      if('item_view' in localStorage && localStorage['item_view']!='')
+      {
+        var data=localStorage['item_view'].split(',');
+        var start_index=data[0].lastIndexOf('/');
+        document.getElementById('image').src=data[0]+'.jpg';
+        document.getElementById('name').innerHTML=data[0].substring(start_index+1);
+        document.getElementById('price').innerHTML='Price : '+data[1];
+      }
+      else
+      {
+          location.replace('home.html');
+      }
+    }
+
+
+    function add_to_cart()
+    {
+      var data=localStorage['item_view'].split(',');
+      var start_index=data[0].lastIndexOf('/');
+      var value=confirm(data[0].substring(start_index+1)+' added to cart successfully'+'\n\nClick ok to confirm');
+      if(value)
+      {
+        var items=parseInt(document.getElementById('items').getAttributeNode('value').value);
+        var cart_items=JSON.parse(localStorage['cart_items']);
+        var item=localStorage['item_view'];
+        if(item in cart_items)
+        {
+          cart_items[item]+=items;
+        }
+        else
+        {
+            cart_items[item]=items;
+        }
+        localStorage['cart_items']=JSON.stringify(cart_items);
+        localStorage['cart']=parseInt(localStorage['cart'])+items;
+        document.getElementById('cart').setAttribute('value',localStorage['cart']);
+      }
+    }
+
+    function buy_now()
+    {
+      var value=confirm('Please confirm to Buy Now by clicking OK');
+      if(value)
+      {
+        var data={};
+        var items=document.getElementById('items').getAttributeNode('value').value;
+        var item=localStorage['item_view'];
+        data[item]=items;
+        localStorage['buy_items']=JSON.stringify(data);
+        localStorage['item_view']='';
+        location.replace("checkout.html");
+      }
+    }
+
+    function change_value(self)
+    {
+        document.getElementById('items').getAttributeNode('value').value=self;
+    }
+
+  </script>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pens - Get Deal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/icon.png">
+
+
+    <style>
+
+    </style>
+
+  </head>
+
+  <body onload="initializing()">
+      <nav>
+        <section id='head'>
+        <a href='../home.html'> <img src="../images/logo.png" width=40px height=40px style="margin:5px 0 0 5px" alt="Image not found"> </a>
+          <h1 style='margin:12px;'><a href='../home.html'>GET DEAL</a></h1>
+          <i class="fa badge" id='cart' style="font-size:40px" value=0><a href='../cart.html'>&#xf07a;</a></i>
+        </section>
+        <hr style="margin:0px">
+
+        <section id='menu'>
+            <h3 class='menu'><a href='notebook.html'>Notebooks</a></h3>
+            <h3 class='menu' style='text-decoration:overline'><a href='pen.html'>Pens</a></h3>
+            <h3 class='menu'><a href='marker.html'>Markers</a></h3>
+            <h3 class='menu'><a href='dairy.html'>Dairies</a></h3>
+            <h3 class='menu'><a href='calculator.html'>Calculator</a></h3>
+        </section>
+      </nav>
+
+      <section style='margin:110px 2% auto 2%'>
+        <h2 style='color:#fa0707;text-align:center'>Pens</h2>
+        <div id="items-grid" >
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/luxor gel pen.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/luxor gel pen,₹20')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/luxor gel pen,₹20')"><div>luxor gel pen</div></a><br>
+              <p style='margin:0'>₹20</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/luxor gel pen,₹20')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/luxor gel pen,₹20')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/link hi school gel pen.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/link hi school gel pen,₹120')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/link hi school gel pen,₹120')"><div>link hi school gel pen</div></a><br>
+              <p style='margin:0'>₹120</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/link hi school gel pen,₹120')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/link hi school gel pen,₹120')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/cello signature.jpg" onclick="item_view('./images/pen/cello signature,₹60')" height=180px alt="Image Not Found"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/cello signature,₹60')"><div>cello signature</div></a><br>
+              <p style='margin:0'>₹60</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/cello signature,₹60')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/cello signature,₹60')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/paperkraft beethoven.jpg" onclick="item_view('./images/pen/paperkraft beethoven,₹45')" height=180px alt="Image Not Found"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/paperkraft beethoven,₹45')"><div>paperkraft beethoven</div></a><br>
+              <p style='margin:0'>₹45</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/paperkraft beethoven,₹45')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/paperkraft beethoven,₹45')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/cello pinpoint.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/cello pinpoint,₹100')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/cello pinpoint,₹100')"><div>cello pinpoint</div></a><br>
+              <p style='margin:0'>₹100</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/cello pinpoint,₹100')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/cello pinpoint,₹100')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/cello papersoft.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/cello papersoft,₹15')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/cello papersoft,₹15')"><div>cello papersoft</div></a><br>
+              <p style='margin:0'>₹15</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/cello papersoft,₹15')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/cello papersoft,₹15')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/hi-techpoint ball pen.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/hi-techpoint ball pen,₹40')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/hi-techpoint ball pen,₹40')"><div>hi-techpoint ball pen</div></a><br>
+              <p style='margin:0'>₹40</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/hi-techpoint ball pen,₹40')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/hi-techpoint ball pen,₹40')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/cello maxtreme gel pen.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/cello maxtreme gel pen,₹30')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/cello maxtreme gel pen,₹30')"><div>cello maxtreme gel pen</div></a><br>
+              <p style='margin:0'>₹30</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/cello maxtreme gel pen,₹30')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/cello maxtreme gel pen,₹30')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/cello butterflow ball pen.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/cello butterflow ball pen,₹10')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/cello butterflow ball pen,₹10')"><div>cello butterflow ball pen</div></a><br>
+              <p style='margin:0'>₹10</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/cello butterflow ball pen,₹10')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/cello butterflow ball pen,₹10')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/pentonic ball pen.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/pentonic ball pen,₹70')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/pentonic ball pen,₹70')"><div>pentonic ball pen</div></a><br>
+              <p style='margin:0'>₹70</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/pentonic ball pen,₹70')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/pentonic ball pen,₹70')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/cello technotip.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/cello technotip,₹150')"></a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/cello technotip,₹150')"><div>cello technotip</div></a><br>
+              <p style='margin:0'>₹150</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/cello technotip,₹150')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/cello technotip,₹150')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/uniball air micro.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/uniball air micro,₹30')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/uniball air micro,₹30')"><div>uniball air micro</div></a><br>
+              <p style='margin:0'>₹30</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/uniball air micro,₹30')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/uniball air micro,₹30')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/cello finegrip ball pen.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/cello finegrip ball pen,₹80')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/cello finegrip ball pen,₹80')"><div>cello finegrip ball pen</div></a><br>
+              <p style='margin:0'>₹80</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/cello finegrip ball pen,₹80')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/cello finegrip ball pen,₹80')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/pen/cello octane gel pen.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/pen/cello octane gel pen,₹110')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/pen/cello octane gel pen,₹110')"><div>cello octane gel pen</div></a><br>
+              <p style='margin:0'>₹110</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/pen/cello octane gel pen,₹110')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/pen/cello octane gel pen,₹110')">
+            </h4>
+          </section>
+        </div>
+        <br><br><br>
+      </section>
+
+      <footer>
+        <section id='footer'>
+            <h3 style='margin:3px'><a href='../home.html'>GET DEAL</a></h3>
+            <h3 style='margin:3px'>INDIA</h3>
+            <h3 style='margin:3px'>By Sai Kiran Nalamothu</h2>
+        </section>
+      </footer>
+  </body>
+
+  <script type="text/javascript">
+    function initializing()
+    {
+      if(!('cart' in localStorage))
+      {
+        localStorage['cart']=0;
+      }
+      if(!('cart_items' in localStorage))
+      {
+        localStorage['cart_items']=JSON.stringify({});
+      }
+      if(!('buy_items' in localStorage))
+      {
+        localStorage['buy_items']=JSON.stringify({});
+      }
+      document.getElementById('cart').getAttributeNode('value').value=localStorage['cart'];
+    }
+
+    function item_view(self)
+    {
+      localStorage['item_view']=self;
+      return 0;
+    }
+
+    function add_to_cart(self)
+    {
+      var data=self.split(',');
+      var start_index=data[0].lastIndexOf('/');
+      var value=confirm(data[0].substring(start_index+1)+' added to cart successfully'+'\n\nClick ok to confirm');
+      if(value)
+      {
+        var cart_items=JSON.parse(localStorage['cart_items']);
+        if(self in cart_items)
+        {
+          cart_items[self]+=1;
+        }
+        else
+        {
+          cart_items[self]=1;
+        }
+        localStorage['cart_items']=JSON.stringify(cart_items);
+        localStorage['cart']=parseInt(localStorage['cart'])+1;
+        document.getElementById('cart').getAttributeNode('value').value=localStorage['cart'];
+      }
+    }
+
+    function buy_now(self)
+    {
+      var value=confirm('Please confirm to Buy Now by clicking OK');
+      if(value)
+      {
+        var item={};
+        item[self]=1;
+        localStorage['buy_items']=JSON.stringify(item);
+        location.replace('../checkout.html');
+      }
+    }
+
+  </script>
+
+</html>

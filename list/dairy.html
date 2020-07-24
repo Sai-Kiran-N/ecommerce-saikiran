@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dairies - Get Deal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/icon.png">
+  </head>
+
+  <body onload="initializing()">
+      <nav>
+        <section id='head'>
+        <a href='../home.html'> <img src="../images/logo.png" width=40px height=40px style="margin:5px 0 0 5px" alt="Image not found"> </a>
+          <h1 style='margin:12px;'><a href='../home.html'>GET DEAL</a></h1>
+          <i class="fa badge" id='cart' style="font-size:40px" value=0><a href='../cart.html'>&#xf07a;</a></i>
+        </section>
+        <hr style="margin:0px">
+
+        <section id='menu'>
+            <h3 class='menu'><a href='notebook.html'>Notebooks</a></h3>
+            <h3 class='menu'><a href='pen.html'>Pens</a></h3>
+            <h3 class='menu'><a href='marker.html'>Markers</a></h3>
+            <h3 class='menu' style='text-decoration:overline'><a href='dairy.html'>Dairies</a></h3>
+            <h3 class='menu'><a href='calculator.html'>Calculator</a></h3>
+        </section>
+      </nav>
+
+      <section style='margin:110px 2% auto 2%'>
+        <h2 style='color:#fa0707;text-align:center'>Dairies</h2>
+        <div id="items-grid" >
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/tiara dairy a5 size.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/dairy/tiara dairy a5 size,₹190')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/tiara dairy a5 size,₹190')"><div>tiara dairy a5 size</div></a><br>
+              <p style='margin:0'>₹190</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/tiara dairy a5 size,₹190')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/tiara dairy a5 size,₹190')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/doodle ruled a5 size dairy.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/dairy/doodle ruled a5 size dairy,₹230')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/doodle ruled a5 size dairy,₹230')"><div>doodle ruled a5 size dairy</div></a><br>
+              <p style='margin:0'>₹230</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/doodle ruled a5 size dairy,₹230')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/doodle ruled a5 size dairy,₹230')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/alcraft leather dairy.jpg" onclick="item_view('./images/dairy/alcraft leather dairy,₹380')" height=180px alt="Image Not Found"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/alcraft leather dairy,₹380')" ><div>alcraft leather dairy</div></a><br>
+              <p style='margin:0'>₹380</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/alcraft leather dairy,₹380')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/alcraft leather dairy,₹380')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/doodle ruled dairy.jpg" onclick="item_view('./images/dairy/doodle ruled dairy,₹260')" height=180px alt="Image Not Found"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/doodle ruled dairy,₹260')"><div>doodle ruled dairy</div></a><br>
+              <p style='margin:0'>₹260</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/doodle ruled dairy,₹260')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/doodle ruled dairy,₹260')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/cubic leatherite a5 size dairy.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/dairy/cubic leatherite a5 size dairy,₹160')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/cubic leatherite a5 size dairy,₹160')"><div>cubic leatherite a5 size dairy</div></a><br>
+              <p style='margin:0'>₹160</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/cubic leatherite a5 size dairy,₹160')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/cubic leatherite a5 size dairy,₹160')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/accuprints hard bound a5 dairy.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/dairy/accuprints hard bound a5 dairy,₹220')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/accuprints hard bound a5 dairy,₹220')"><div>accuprints hard bound a5 dairy</div></a><br>
+              <p style='margin:0'>₹220</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/accuprints hard bound a5 dairy,₹220')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/accuprints hard bound a5 dairy,₹220')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/rsn leather dairy.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/dairy/rsn leather dairy,₹600')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/rsn leather dairy,₹600')"><div>rsn leather dairy</div></a><br>
+              <p style='margin:0'>₹600</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/rsn leather dairy,₹600')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/rsn leather dairy,₹600')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/alcraft leather handmade dairy.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/dairy/alcraft leather handmade dairy,₹590')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/alcraft leather handmade dairy,₹590')"><div>alcraft leather handmade dairy</div></a><br>
+              <p style='margin:0'>₹590</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/alcraft leather handmade dairy,₹590')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/alcraft leather handmade dairy,₹590')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/tera13 unicorn feaher dairy for girls.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/dairy/tera13 unicorn feaher dairy for girls,₹440')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/tera13 unicorn feaher dairy for girls,₹440')"><div>tera13 unicorn feaher dairy for girls</div></a><br>
+              <p style='margin:0'>₹440</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/tera13 unicorn feaher dairy for girls,₹440')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/tera13 unicorn feaher dairy for girls,₹440')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/parteet color changing dairy.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/dairy/parteet color changing dairy,₹550')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/parteet color changing dairy,₹550')"><div>parteet color changing dairy</div></a><br>
+              <p style='margin:0'>₹550</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/parteet color changing dairy,₹550')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/parteet color changing dairy,₹550')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/doodle hard bound dairy.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/dairy/doodle hard bound dairy,₹300')"></a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/doodle hard bound dairy,₹300')"><div>doodle hard bound dairy</div></a><br>
+              <p style='margin:0'>₹300</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/doodle hard bound dairy,₹300')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/doodle hard bound dairy,₹300')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/rjkart handmade classic dairy.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/dairy/rjkart handmade classic dairy,₹190')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/rjkart handmade classic dairy,₹190')"><div>rjkart handmade classic dairy</div></a><br>
+              <p style='margin:0'>₹190</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/rjkart handmade classic dairy,₹190')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/rjkart handmade classic dairy,₹190')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/dairy/doodle dairy.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/dairy/doodle dairy,₹210')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/dairy/doodle dairy,₹210')"><div>doodle dairy</div></a><br>
+              <p style='margin:0'>₹210</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/dairy/doodle dairy,₹210')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/dairy/doodle dairy,₹210')">
+            </h4>
+          </section>
+        </div>
+        <br><br><br>
+      </section>
+
+
+      <footer>
+        <section id='footer'>
+            <h3 style='margin:3px'><a href='../home.html'>GET DEAL</a></h3>
+            <h3 style='margin:3px'>INDIA</h3>
+            <h3 style='margin:3px'>By Sai Kiran Nalamothu</h2>
+        </section>
+      </footer>
+
+  </body>
+
+  <script type="text/javascript">
+
+      function initializing()
+      {
+        if(!('cart' in localStorage))
+        {
+          localStorage['cart']=0;
+        }
+        if(!('cart_items' in localStorage))
+        {
+          localStorage['cart_items']=JSON.stringify({});
+        }
+        if(!('buy_items' in localStorage))
+        {
+          localStorage['buy_items']=JSON.stringify({});
+        }
+        document.getElementById('cart').getAttributeNode('value').value=localStorage['cart'];
+      }
+
+      function item_view(self)
+      {
+        localStorage['item_view']=self;
+        return 0;
+      }
+
+      function add_to_cart(self)
+      {
+        var data=self.split(',');
+        var start_index=data[0].lastIndexOf('/');
+        var value=confirm(data[0].substring(start_index+1)+' added to cart successfully'+'\n\nClick ok to confirm');
+        if(value)
+        {
+          var cart_items=JSON.parse(localStorage['cart_items']);
+          if(self in cart_items)
+          {
+            cart_items[self]+=1;
+          }
+          else
+          {
+            cart_items[self]=1;
+          }
+          localStorage['cart_items']=JSON.stringify(cart_items);
+          localStorage['cart']=parseInt(localStorage['cart'])+1;
+          document.getElementById('cart').getAttributeNode('value').value=localStorage['cart'];
+        }
+      }
+
+      function buy_now(self)
+      {
+        var value=confirm('Please confirm to Buy Now by clicking OK');
+        if(value)
+        {
+          var item={};
+          item[self]=1;
+          localStorage['buy_items']=JSON.stringify(item);
+          location.replace('../checkout.html');
+        }
+      }
+
+  </script>
+
+</html>

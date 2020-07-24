@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculators - Get Deal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/icon.png">
+  </head>
+
+  <body onload="initializing()">
+      <nav>
+        <section id='head'>
+        <a href='../home.html'> <img src="../images/logo.png" width=40px height=40px style="margin:5px 0 0 5px" alt="Image not found"> </a>
+          <h1 style='margin:12px;'><a href='../home.html'>GET DEAL</a></h1>
+          <i class="fa badge" id='cart' style="font-size:40px" value=0><a href='../cart.html'>&#xf07a;</a></i>
+        </section>
+        <hr style="margin:0px">
+
+        <section id='menu'>
+            <h3 class='menu'><a href='notebook.html'>Notebooks</a></h3>
+            <h3 class='menu'><a href='pen.html'>Pens</a></h3>
+            <h3 class='menu'><a href='marker.html'>Markers</a></h3>
+            <h3 class='menu'><a href='dairy.html'>Dairies</a></h3>
+            <h3 class='menu' style='text-decoration:overline'><a href='calculator.html'>Calculator</a></h3>
+        </section>
+      </nav>
+
+      <section style='margin:110px 2% auto 2%'>
+        <h2 style='color:#fa0707;text-align:center'>Calculators</h2>
+        <div id="items-grid" >
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/casio dj 220d.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/casio dj 220d,₹250')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/casio dj 220d,₹250')"><div>casio dj 220d</div></a><br>
+              <p style='margin:0'>₹250</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/casio dj 220d,₹250')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/casio dj 220d,₹250')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/casio fx 82ms.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/casio fx 82ms,₹999')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/casio fx 82ms,₹999')"><div>casio fx 82ms</div></a><br>
+              <p style='margin:0'>₹999</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/casio fx 82ms,₹999')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/casio fx 82ms,₹999')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/casio fx 991es.jpg" onclick="item_view('./images/calculator/casio fx 991es,₹910')" height=180px alt="Image Not Found"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/casio fx 991es,₹910')" ><div>casio fx 991es</div></a><br>
+              <p style='margin:0'>₹910</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/casio fx 991es,₹910')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/casio fx 991es,₹910')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/casio fx 991ex.jpg" onclick="item_view('./images/calculator/casio fx 991ex,₹1160')" height=180px alt="Image Not Found"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/casio fx 991ex,₹1160')"><div>casio fx 991ex</div></a><br>
+              <p style='margin:0'>₹1160</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/casio fx 991ex,₹1160')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/casio fx 991ex,₹1160')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/casio hl 4a.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/casio hl 4a,₹210')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/casio hl 4a,₹210')"><div>casio hl 4a.jpg</div></a><br>
+              <p style='margin:0'>₹210</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/casio hl 4a,₹210')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/casio hl 4a,₹210')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/casio hl 820.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/casio hl 820,₹490')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/casio hl 820,₹490')"><div>casio hl 820</div></a><br>
+              <p style='margin:0'>₹490</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/casio hl 820,₹490')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/casio hl 820,₹490')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/casio jw 200sc.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/casio jw 200sc,₹320')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/casio jw 200sc,₹320')"><div>casio jw 200sc</div></a><br>
+              <p style='margin:0'>₹320</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/casio jw 200sc,₹320')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/casio jw 200sc,₹320')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/casio mj 12v.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/casio mj 12v,₹410')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/casio mj 12v,₹410')"><div>casio mj 12v</div></a><br>
+              <p style='margin:0'>₹410</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/casio mj 12v,₹410')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/casio mj 12v,₹410')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/casio mj 120 gst.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/casio mj 120 gst,₹380')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/casio mj 120 gst,₹380')"><div>casio mj 120 gst</div></a><br>
+              <p style='margin:0'>₹380</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/casio mj 120 gst,₹380')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/casio mj 120 gst,₹380')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/casio sx 100.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/casio sx 100,₹450')"></a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/casio sx 100,₹450')"><div>casio sx 100</div></a><br>
+              <p style='margin:0'>₹450</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/casio sx 100,₹450')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/casio sx 100,₹450')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/citzen ct 8814.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/citzen ct 8814,₹480')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/citzen ct 8814,₹480')"><div>citzen ct 8814</div></a><br>
+              <p style='margin:0'>₹480</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/citzen ct 8814,₹480')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/citzen ct 8814,₹480')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/milan financial calculator.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/milan financial calculator,₹330')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/milan financial calculator,₹330')"><div>milan financial calculator</div></a><br>
+              <p style='margin:0'>₹330</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/milan financial calculator,₹330')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/milan financial calculator,₹330')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/oreva 400 solar and battery calculator.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/oreva 400 solar and battery calculator,₹410')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/oreva 400 solar and battery calculator,₹410')"><div>amazon basics classic dairy</div></a><br>
+              <p style='margin:0'>₹410</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/oreva 400 solar and battery calculator,₹410')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/oreva 400 solar and battery calculator,₹410')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/orpat calculator.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/orpat calculator,₹240')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/orpat calculator,₹240')"><div>orpat calculator</div></a><br>
+              <p style='margin:0'>₹240</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/orpat calculator,₹240')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/orpat calculator,₹240')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/saleon business calculator.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/saleon business calculator,₹280')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/saleon business calculator,₹280')"><div>saleon business calculator</div></a><br>
+              <p style='margin:0'>₹280</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/saleon business calculator,₹280')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/saleon business calculator,₹280')">
+            </h4>
+          </section>
+
+          <section>
+            <a href='../item-view.html'>  <img src="../images/calculator/texas financial calculator.jpg" height=180px alt="Image Not Found" onclick="item_view('./images/calculator/texas financial calculator,₹750')"> </a>
+            <h4 style='margin:0;text-align:center;'>
+              <a href='../item-view.html' onclick="item_view('./images/calculator/texas financial calculator,₹750')"><div>texas financial calculator</div></a><br>
+              <p style='margin:0'>₹750</p><br>
+              <input type="button" name="" value="ADD TO CART" onclick="add_to_cart('./images/calculator/texas financial calculator,₹750')">
+              <input type="button" name="" value="BUY NOW" onclick="buy_now('./images/calculator/texas financial calculator,₹750')">
+            </h4>
+          </section>
+        </div>
+        <br><br><br>
+      </section>
+
+
+      <footer>
+        <section id='footer'>
+            <h3 style='margin:3px'><a href='../home.html'>GET DEAL</a></h3>
+            <h3 style='margin:3px'>INDIA</h3>
+            <h3 style='margin:3px'>By Sai Kiran Nalamothu</h2>
+        </section>
+      </footer>
+
+  </body>
+
+  <script type="text/javascript">
+      function initializing()
+      {
+        if(!('cart' in localStorage))
+        {
+          localStorage['cart']=0;
+        }
+        if(!('cart_items' in localStorage))
+        {
+          localStorage['cart_items']=JSON.stringify({});
+        }
+        if(!('buy_items' in localStorage))
+        {
+          localStorage['buy_items']=JSON.stringify({});
+        }
+        document.getElementById('cart').getAttributeNode('value').value=localStorage['cart'];
+      }
+
+      function item_view(self)
+      {
+        localStorage['item_view']=self;
+        return 0;
+      }
+
+      function add_to_cart(self)
+      {
+        var data=self.split(',');
+        var start_index=data[0].lastIndexOf('/');
+        var value=confirm(data[0].substring(start_index+1)+' added to cart successfully'+'\n\nClick ok to confirm');
+        if(value)
+        {
+          var cart_items=JSON.parse(localStorage['cart_items']);
+          if(self in cart_items)
+          {
+            cart_items[self]+=1;
+          }
+          else
+          {
+            cart_items[self]=1;
+          }
+          localStorage['cart_items']=JSON.stringify(cart_items);
+          localStorage['cart']=parseInt(localStorage['cart'])+1;
+          document.getElementById('cart').getAttributeNode('value').value=localStorage['cart'];
+        }
+      }
+
+      function buy_now(self)
+      {
+        var value=confirm('Please confirm to Buy Now by clicking OK');
+        if(value)
+        {
+          var item={};
+          item[self]=1;
+          localStorage['buy_items']=JSON.stringify(item);
+          location.replace('../checkout.html');
+        }
+      }
+  </script>
+
+</html>
