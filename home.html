@@ -29,19 +29,17 @@
 
       <div style='margin:110px 2% auto 2%'>
             <h2 style='color:#fa0707;text-align:center'>Products</h2>
-            <section class='notebooks'>
-              <a href='./list/notebook.html'>  <img src="./images/book.jpg" width=100% height=250px alt=""> </a>
-              <h1 style='margin:0;text-align:center'><a href='./list/notebook.html'>View Notebooks</a></h1>
-            </section>
-            <br><br>
-
-            <section class='pens'>
-              <a href='./list/pen.html'>  <img src="./images/pen.jpg" width=100% height=250px alt=""> </a>
-              <h1 style='margin:0;text-align:center'><a href='./list/pen.html'>View Pens</a></h1>
-            </section>
-            <br><br>
-
             <section id='grid-products'>
+              <section class='notebooks'>
+                <a href='./list/notebook.html'>  <img src="./images/book.jpg" style='width:100%' height=250px alt=""> </a>
+                <h1 style='margin:0;text-align:center'><a href='./list/notebook.html'>View Notebooks</a></h1>
+              </section>
+
+              <section class='markers'>
+                <a href='./list/pen.html'>  <img src="./images/pen.jpg" width=100% height=250px alt=""> </a>
+                <h1 style='margin:0;text-align:center'><a href='./list/pen.html'>View Pens</a></h1>
+              </section>
+
               <section class='markers'>
                 <a href='./list/marker.html'>  <img src="./images/marker.jpg" width=100% height=250px alt=""> </a>
                 <h1 style='margin:0;text-align:center'><a href='./list/marker.html'>View Markers</a></h1>
@@ -58,7 +56,7 @@
               </section>
             </section>
 
-      </div><br><br>
+      </div><br><br><br><br><br>
 
       <footer>
         <section id='footer'>
@@ -67,25 +65,9 @@
             <h3 style='margin:3px'>By Sai Kiran Nalamothu</h2>
         </section>
       </footer>
-
   </body>
 
-  <script type="text/javascript">
-    function initializing()
-    {
-      if(!('cart' in localStorage))
-      {
-        localStorage['cart']=0;
-      }
-      if(!('cart_items' in localStorage))
-      {
-        localStorage['cart_items']=JSON.stringify({});
-      }
-      if(!('buy_items' in localStorage))
-      {
-        localStorage['buy_items']=JSON.stringify({});
-      }
-      document.getElementById('cart').getAttributeNode('value').value=localStorage['cart'];
-    }
+  <script type="text/javascript" src="./js/home.js">
+
   </script>
 </html>

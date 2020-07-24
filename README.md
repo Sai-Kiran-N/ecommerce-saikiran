@@ -8,11 +8,11 @@ These instructions will get you how to access the Ecommerce Website
 
 * The theme of project is to recreate following website [shop](https://shop.polymer-project.org)
 * The website should have 5 pages
-    * Home Page
-    * Item Listing Page
-    * Single Item Page
-    * Cart Page
-    * Checkout Page
+  * Home Page
+  * Item Listing Page
+  * Single Item Page
+  * Cart Page
+  * Checkout Page
 
 ### Requirements
 
@@ -23,6 +23,6 @@ These instructions will get you how to access the Ecommerce Website
 ### Accessing the Webpage
 
 * Copy the Url given below and paste it in the Url field of your browser or simply click on it, it will open the webpage using the default browser in your device
-* https://ecommerce-website-saikiran.herokuapp.com
+* [https://ecommerce-website-saikiran.herokuapp.com](https://ecommerce-website-saikiran.herokuapp.com)
 
 *ThankYou!*
